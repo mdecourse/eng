@@ -7,7 +7,7 @@ __pycache__/
 *.so
 
 # cmsimde config
-config/
+config/config
 
 # Distribution / packaging
 .Python
