@@ -1,6 +1,6 @@
 # coding: utf-8
 
-"""Flask 主程式
+"""Flask Main program
 """
 
 from flask import Flask, send_from_directory, request, redirect, \
@@ -105,7 +105,8 @@ def delete_file():
         return redirect("/login")
     head, level, page = parse_content()
     directory = render_menu(head, level, page)
-    filename = request.form['filename']
+    # for multiple files selection
+    filename = request.form.getlist('filename')
     if filename is None:
         outstring = "no file selected!"
         return set_css() + "<div class='container'><nav>" + \
@@ -138,7 +139,8 @@ def doDelete():
     if not isAdmin():
         return redirect("/login")
     # delete files
-    filename = request.form['filename']
+    # allow multiple files selection
+    filename = request.form.getlist('filename')
     outstring = "all these files will be deleted:<br /><br />"
     # only select one file
     if isinstance(filename, str):
@@ -2294,6 +2296,8 @@ def ssavePage():
 def syntaxhighlight():
     return '''
 <script type="text/javascript" src="/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="/static/syntaxhighlighter/shBrushDiff.js"></script>
 <script type="text/javascript" src="/static/syntaxhighlighter/shBrushJScript.js"></script>
 <script type="text/javascript" src="/static/syntaxhighlighter/shBrushJava.js"></script>
 <script type="text/javascript" src="/static/syntaxhighlighter/shBrushPython.js"></script>
@@ -2309,7 +2313,7 @@ def syntaxhighlight():
 <link type="text/css" rel="stylesheet" href="/static/syntaxhighlighter/css/shCoreDefault.css"/>
 <script type="text/javascript">SyntaxHighlighter.all();</script>
 
-<!-- 啟用 LaTeX equations 編輯 -->
+<!-- 啟用 LaTeX equations 編輯
     <script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
     <script type="text/javascript">
     init_mathjax = function() {
@@ -2330,6 +2334,7 @@ def syntaxhighlight():
     }
     init_mathjax();
     </script>
+-->
  <!-- 暫時不用
 <script src="/static/fengari-web.js"></script>
 <script type="text/javascript" src="/static/Cango-13v08-min.js"></script>
@@ -2352,6 +2357,8 @@ img.add_border {
 def syntaxhighlight2():
     return '''
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
@@ -2367,7 +2374,7 @@ def syntaxhighlight2():
 <link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
 <script type="text/javascript">SyntaxHighlighter.all();</script>
 
-<!-- 啟用 LaTeX equations 編輯 -->
+<!-- 啟用 LaTeX equations 編輯
 <script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 <script type="text/javascript">
 init_mathjax = function() {
@@ -2388,7 +2395,7 @@ init_mathjax = function() {
 }
 init_mathjax();
 </script>
-
+ -->
 <!-- 暫時不用
 <script src="./../cmsimde/static/fengari-web.js"></script>
 <script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
