@@ -13,14 +13,12 @@
 <v t="yen.20170108171733.1"><vh>@path ../</vh>
 <v t="leo.20180115150519.1"><vh>@edit index.html</vh></v>
 <v t="yen.20200625114148.1"><vh>@edit init.py</vh></v>
-<v t="yen.20200606120157.1"><vh>@path ../</vh>
-<v t="yen.20170108171733.3"><vh>@edit README.md</vh></v>
-<v t="yen.20170108171733.4"><vh>@edit .gitignore</vh></v>
 <v t="yen.20200625113918.1"><vh>@path cmsimde</vh>
 <v t="yen.20200625113928.1"><vh>@auto wsgi.py</vh></v>
 <v t="yen.20200625114002.1"><vh>@auto flaskapp.py</vh></v>
 </v>
-</v>
+<v t="yen.20170108171733.4"><vh>@edit .gitignore</vh></v>
+<v t="yen.20170108171733.3"><vh>@edit README.md</vh></v>
 <v t="leo.20170908162839.1"><vh>沒有 disqus 論壇</vh>
 <v t="yen.20170108171733.2"><vh>@button local-blog</vh></v>
 </v>
@@ -72,8 +70,8 @@
 <v t="leo.20170710022054.1"><vh>可以另建節點存放 markdown 目錄下的 md 檔案</vh></v>
 <v t="leo.20170710022041.1"><vh>@path markdown</vh>
 <v t="leo.20180115115910.1"><vh>2020</vh>
-<v t="leo.20180423103639.1"><vh>高風險聯網設備</vh>
-<v t="leo.20180423103656.1"><vh>@edit 20200604.md</vh></v>
+<v t="leo.20180423103639.1"><vh>最低 60</vh>
+<v t="leo.20180423103656.1"><vh>@edit 20200628.md</vh></v>
 </v>
 </v>
 </v>
@@ -251,7 +249,6 @@ make = threading.Thread(target=domake)
 make.start()</t>
 <t tx="yen.20170224232341.1"></t>
 <t tx="yen.20170224232341.2"></t>
-<t tx="yen.20200606120157.1"></t>
 <t tx="yen.20200625113918.1"></t>
 </tnodes>
 </leo_file>

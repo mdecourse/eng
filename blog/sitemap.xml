@@ -4,64 +4,85 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://eng.kmol.info/blog/</loc>
-<lastmod>2020-06-08T16:10:12-00:00</lastmod>
+<loc>http://mde.tw/eng/blog/</loc>
+<lastmod>2020-06-28T19:31:03-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://eng.kmol.info/blog/archives.html</loc>
-<lastmod>2020-06-08T16:10:12-00:00</lastmod>
+<loc>http://mde.tw/eng/blog/archives.html</loc>
+<lastmod>2020-06-28T19:31:03-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://eng.kmol.info/blog/tags.html</loc>
-<lastmod>2020-06-08T16:10:12-00:00</lastmod>
+<loc>http://mde.tw/eng/blog/tags.html</loc>
+<lastmod>2020-06-28T19:31:03-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://eng.kmol.info/blog/categories.html</loc>
-<lastmod>2020-06-08T16:10:12-00:00</lastmod>
+<loc>http://mde.tw/eng/blog/categories.html</loc>
+<lastmod>2020-06-28T19:31:03-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://eng.kmol.info/blog/pages/about/</loc>
-<lastmod>2020-06-06T10:49:39+08:00</lastmod>
+<loc>http://mde.tw/eng/blog/pages/about/</loc>
+<lastmod>2020-06-28T19:02:48+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://eng.kmol.info/blog/high-risk-networking-devices.html</loc>
+<loc>http://mde.tw/eng/blog/min-60-project.html</loc>
+<lastmod>2020-06-28T11:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mde.tw/eng/blog/high-risk-networking-devices.html</loc>
 <lastmod>2020-06-04T11:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://eng.kmol.info/blog/category/network.html</loc>
+<loc>http://mde.tw/eng/blog/category/min60.html</loc>
+<lastmod>2020-06-28T11:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mde.tw/eng/blog/category/network.html</loc>
 <lastmod>2020-06-04T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://eng.kmol.info/blog/tag/security.html</loc>
+<loc>http://mde.tw/eng/blog/tag/m60.html</loc>
+<lastmod>2020-06-28T11:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mde.tw/eng/blog/tag/security.html</loc>
 <lastmod>2020-06-04T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://eng.kmol.info/blog/author/yen.html</loc>
-<lastmod>2020-06-04T11:00:00+08:06</lastmod>
+<loc>http://mde.tw/eng/blog/author/yen.html</loc>
+<lastmod>2020-06-28T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
